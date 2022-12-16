@@ -1,23 +1,29 @@
 import React from 'react';
 
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-import HeaderStatusBar from './components/HeaderStatusBar';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import Footer from './components/Footer';
+import AppLayout from './components/AppLayout';
 
 const App = () => {
   return (
     <SafeAreaView
       style={{
+        flex: 1,
         backgroundColor: 'black',
       }}>
-      <HeaderStatusBar />
+      <View style={{flex: 1}}>
+        <AppLayout>
+          <View>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+          </View>
+        </AppLayout>
+      </View>
+      <Footer />
     </SafeAreaView>
   );
 };

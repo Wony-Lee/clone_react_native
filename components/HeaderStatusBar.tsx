@@ -32,6 +32,7 @@ const HeaderStatusBar: React.FC<Props> = () => {
           }}>
           {menu.map((item, idx) => (
             <Text
+              key={idx}
               style={{
                 color: 'white',
                 marginRight: 15,
