@@ -1,6 +1,6 @@
 import React from 'react';
 import {Dimensions, StyleSheet, Text, View} from 'react-native';
-import HeaderStatusBar from './HeaderStatusBar';
+import HeaderBar from './HeaderBar';
 import Footer from './Footer';
 
 interface Props {
@@ -11,7 +11,6 @@ const AppLayout: React.FC<Props> = ({children}) => {
   console.log('clientHeight', clientHeight - 182);
   return (
     <View>
-      <HeaderStatusBar />
       <View
         style={{
           height: clientHeight,
